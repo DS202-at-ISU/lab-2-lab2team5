@@ -49,10 +49,10 @@ Sale Date:
 Sale Price: 
 Multi Sale:
 Year Built:
-Acres: Float
-TotalLiving Area: int
-Bedrooms:int
-Finished basement: int
+Acres: Acres of the lot. (Float)
+TotalLiving Area: Total living area in square feet (Integer)
+Bedrooms: Number of bedrooms (Integer)
+Finished basement: Total area of the finshed basement in square feet (Integer)
 Lot Area:
 AC:
 Fire Place:
