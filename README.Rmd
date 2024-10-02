@@ -25,8 +25,9 @@ Katie test
 
 ```{r setup, include=FALSE}
 
-head(classdata)
+library(classdata)
 data(ames)
+
 
 ```
 
