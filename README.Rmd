@@ -46,6 +46,10 @@ Parcel ID: ID of the character (Integer)
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4a27d8671a33347f8cdade4f0759bdb0c8b16ec7
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
 
@@ -57,14 +61,17 @@ We cannot find a range for this variable
 
 
 Anna F:
-=======
+
 Occupancy: Type of family ownership and owner details (String)
 
 We cannot find a range for this variable
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 4a27d8671a33347f8cdade4f0759bdb0c8b16ec7
 Sale Date: 
 Sale Price: 
 Multi Sale:
@@ -73,14 +80,9 @@ Acres: Acres of the lot. (Float)
 TotalLiving Area: Total living area in square feet (Integer)
 Bedrooms: Number of bedrooms (Integer)
 Finished basement: Total area of the finshed basement in square feet (Integer)
-=======
-=======
-We cannot find a range for this variable
-=======
 
->>>>>>> a74f7a2396849c64cc709f977e018088e4bd7cb4
->>>>>>> bfc60b774e712483870564e052893bc667fc06d6
->>>>>>> 8facf9835bb94f2cb701baa9854677dd4c136fe6
+We cannot find a range for this variable
+
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
@@ -104,19 +106,19 @@ Acres: Float
 TotalLiving Area: int
 Bedrooms:int
 Finished basement: int
-<<<<<<< HEAD
->>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
-=======
 
-<<<<<<< HEAD
+Grace Iversen (Last 4 variables)
+Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard.
+```{r}
+range(ames$LotArea, na.rm=TRUE)
+```
 
-=======
->>>>>>> bfc60b774e712483870564e052893bc667fc06d6
->>>>>>> 8facf9835bb94f2cb701baa9854677dd4c136fe6
-Lot Area:
-AC:
-Fire Place:
-Neightborhood:
+AC: Is a logical variable representing if the house has AC or not. It is a char object, so it will intake Y or N and become True or False. The expected outcomes will be Yes or No.
+
+Fire Place: This is a logical variable representing if a house has a fireplace or not. It is a char object, so it will intake Y or N and become True or False. The expected outcomes will be Yes or No.
+
+Neightborhood: This is a fctr object. It represents the neightborhood area in Ames. There will not be a range value.
+
 
 
 2. Our main variable is sale price
