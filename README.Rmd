@@ -163,7 +163,17 @@ ggplot(ames, aes(x = `Sale Price`)) +
 
 4. Anna: I will be comparing year built to sale price
 
+Jack: I will be comparing the number of Bedrooms
 
+  
+
+```{r}
+ggplot(ames, aes(y= `Sale Price` / 10000, x = `Bedrooms`)) + 
+  geom_point() +
+  ggtitle("Sale Price based on number of Bedrooms") +
+  labs(x = "Number of Bedrooms",
+       y = "Sale Price / 10,000 ")
+```
 
 
 
