@@ -122,17 +122,6 @@ range(ames$`FinishedBsmtArea (sf)`, na.rm = TRUE)
 ```
 
 
-<<<<<<< HEAD
->>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
-=======
-=======
-Acres: Float
-TotalLiving Area: int
-Bedrooms:int
-Finished basement: int
->>>>>>> 935d0e8b5897419b0bd833370460777773b18ade
-
-
 Lot Area:
 AC:
 Fire Place:
