@@ -41,6 +41,11 @@ The variables for the Ames data are:
 
 Katie N:
 Parcel ID: ID of the character (Integer) 
+<<<<<<< HEAD
+```{r setup, include=FALSE}
+range(ames$'Parcel ID', na.rm = TRUE)
+```
+
 
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
@@ -55,6 +60,9 @@ We cannot find a range for this variable
 Anna F:
 
 Occupancy: Type of family ownership and owner details (String)
+
+We cannot find a range for this variable
+
 Sale Date: 
 Sale Price: 
 Multi Sale:
