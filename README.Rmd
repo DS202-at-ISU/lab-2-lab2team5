@@ -50,10 +50,10 @@ Acres:
 TotalLiving Area:
 Bedrooms:
 Finished basement:
-Lot Area:
-AC:
-Fire Place:
-Neightborhood:
+Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard. The range 
+AC: Is a logical variable representing if the house has AC or not. It is a char object, so it will intake Y or N and become True or False.
+Fire Place: This is a logical variable representing if a house has a fireplace or not. It is a char object, so it will intake Y or N and become True or False.
+Neightborhood: This is a fctr object. It represents the neightborhood area in Ames.
 
 
 
