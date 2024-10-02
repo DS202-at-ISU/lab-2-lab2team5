@@ -145,7 +145,7 @@ Neightborhood: This is a fctr object. It represents the neightborhood area in Am
 
 3. Typed by Grace
 ```{r}
-range(ames$SalePrice)
+range(ames$'Sale Price')
 ```
 
 
