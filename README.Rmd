@@ -37,7 +37,7 @@ head(ames)
 
 
 
-The variables for the Ames data are:
+1. The variables for the Ames data are:
 
 Katie N:
 Parcel ID: ID of the character (Integer) 
@@ -59,7 +59,7 @@ We cannot find a range of this variable
 Occupancy: Type of family ownership and owner details (String)
 We cannot find a range for this variable
 
-
+Anna Variables: 
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
@@ -128,7 +128,7 @@ ggplot(ames, aes(x = `Sale Price`)) +
   geom_histogram() +
   ggtitle("Sale Price Count")
 ```
-
+Anna: The Variable we choose was numerical, the general pattern of our histogram is that most of the data falls in between a House Sale Price of 0 and 1500 Thousand US Dollars. This makes our histogram look odd because there are around 780 rows that include houses over 1500 Thousand US Dollars, making the histogram very skewed and have large gaps. 
 
 
 4. Anna:
