@@ -144,3 +144,7 @@ Neightborhood: This is a fctr object. It represents the neightborhood area in Am
 2. Our main variable is sale price
 
 
+
+
+4. We will be comparing year build and sale price as our variables
+
