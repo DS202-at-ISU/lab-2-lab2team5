@@ -25,3 +25,12 @@ This is a message from Grace
 
 Test Anna
 Katie test
+
+
+
+```{r setup, include=FALSE}
+
+head(classdata)
+
+```
+
