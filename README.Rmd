@@ -116,6 +116,9 @@ Finished basement:Total area of the finished basement in square feet (Integer)
 ```{r setup, include=FALSE}
 range(ames$Acres, na.rm = TRUE)
 range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
+range(ames$Bedrooms (sf), na.rm = TRUE)
+range(ames$`FinishedBsmtArea (sf)`, na.rm = TRUE)
+
 ```
 
 
