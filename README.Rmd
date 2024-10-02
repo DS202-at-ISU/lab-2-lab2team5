@@ -42,11 +42,17 @@ The variables for the Ames data are:
 Katie N:
 Parcel ID: ID of the character (Integer) 
 <<<<<<< HEAD
+
+=======
+>>>>>>> 980c9ad48d69d36f33f5bcf4216352f1a01a5258
 ```{r setup, include=FALSE}
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 4a27d8671a33347f8cdade4f0759bdb0c8b16ec7
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
 
@@ -59,10 +65,17 @@ We cannot find a range for this variable
 
 Anna F:
 
+<<<<<<< HEAD
 Occupancy: Type of family ownership and owner details (String)
 
 We cannot find a range for this variable
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> 4a27d8671a33347f8cdade4f0759bdb0c8b16ec7
 Sale Date: 
 Sale Price: 
 Multi Sale:
@@ -74,6 +87,8 @@ Finished basement: Total area of the finshed basement in square feet (Integer)
 
 We cannot find a range for this variable
 
+=======
+>>>>>>> 980c9ad48d69d36f33f5bcf4216352f1a01a5258
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
@@ -93,10 +108,24 @@ range(ames$YearBuilt, na.rm = TRUE)
 ```
 
 Jack L:
-Acres: Float
-TotalLiving Area: int
-Bedrooms:int
-Finished basement: int
+<<<<<<< HEAD
+Acres: Acres of the lot (Float)
+TotalLiving Area: Total living area in square feet (Integer)
+Bedrooms:Number of bedrooms (Integer)
+Finished basement:Total area of the finished basement in square feet (Integer)
+```{r setup, include=FALSE}
+range(ames$Acres, na.rm = TRUE)
+range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
+range(ames$Bedrooms (sf), na.rm = TRUE)
+range(ames$`FinishedBsmtArea (sf)`, na.rm = TRUE)
+
+```
+
+
+Lot Area:
+AC:
+Fire Place:
+Neightborhood:
 
 Grace Iversen (Last 4 variables)
 Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard.
@@ -118,4 +147,8 @@ Neightborhood: This is a fctr object. It represents the neightborhood area in Am
 ```{r}
 range(ames$SalePrice)
 ```
+
+
+
+4. We will be comparing year build and sale price as our variables
 
