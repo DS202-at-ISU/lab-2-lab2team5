@@ -45,6 +45,7 @@ Parcel ID: ID of the character (Integer)
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
 
+
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
 
@@ -56,6 +57,7 @@ We cannot find a range for this variable
 
 
 Anna F:
+
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
@@ -85,6 +87,19 @@ Lot Area:
 AC:
 Fire Place:
 Neightborhood:
+
+Grace Iversen (Last 4 variables)
+Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard.
+```{r}
+range(ames$LotArea, na.rm=TRUE)
+```
+
+AC: Is a logical variable representing if the house has AC or not. It is a char object, so it will intake Y or N and become True or False. The expected outcomes will be Yes or No.
+
+Fire Place: This is a logical variable representing if a house has a fireplace or not. It is a char object, so it will intake Y or N and become True or False. The expected outcomes will be Yes or No.
+
+Neightborhood: This is a fctr object. It represents the neightborhood area in Ames. There will not be a range value.
+
 
 
 2. Our main variable is sale price
