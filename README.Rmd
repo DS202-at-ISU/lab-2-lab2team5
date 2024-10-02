@@ -128,6 +128,7 @@ ggplot(ames, aes(x = `Sale Price`)) +
   geom_histogram() +
   ggtitle("Sale Price Count")
 ```
+
 Anna: The Variable we choose was numerical, the general pattern of our histogram is that most of the data falls in between a House Sale Price of 0 and 1500 Thousand US Dollars. This makes our histogram look odd because there are around 780 rows that include houses over 1500 Thousand US Dollars, making the histogram very skewed and have large gaps. 
 
 
