@@ -149,7 +149,7 @@ range(ames$'Sale Price')
 ```
 
 
-Historgram - Created by Anna
+Histogram - Created by Anna
 
 ```{r}
 library(ggplot2)
@@ -161,9 +161,7 @@ ggplot(ames, aes(x = `Sale Price`)) +
 
 
 
-
-4. We will be comparing year build and sale price as our variables
-
+4. Anna: I will be comparing year built to sale price
 
 
 
