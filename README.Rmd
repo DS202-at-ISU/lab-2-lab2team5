@@ -38,16 +38,30 @@ head(ames)
 
 
 The variables for the Ames data are:
+
+Katie N:
 Parcel ID: ID of the character (Integer) 
+<<<<<<< HEAD
 ```{r setup, include=FALSE}
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
 
+=======
+>>>>>>> 9d1c3458615ad06b97a0a1f290355cbde78e44fe
 
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
+
 Style: Type and build of housing (String)
 We cannot find a range of this variable
+<<<<<<< HEAD
+
+Occupancy: Type of family ownership and owner details (String)
+We cannot find a range for this variable
+
+
+Anna F:
+=======
 Occupancy: Type of family ownership and owner details (String)
 <<<<<<< HEAD
 
@@ -76,19 +90,23 @@ We cannot find a range for this variable
 >>>>>>> 8facf9835bb94f2cb701baa9854677dd4c136fe6
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
+
 Sale Price: Sale Price in US Dollars (Integers)
 ```{r setup, include=FALSE}
 range(ames$'Sale Price', na.rm = TRUE)
 
 ```
+
 Multi Sale: If the sale was part of a package (Logical Value)
 -The range is not very important for here becuase there is only two values (yes and no for part of a package)
+
 Year Built: Year that house was built (Integer Value)
 ```{r setup, include=FALSE}
 range(ames$YearBuilt, na.rm = TRUE)
 
 ```
 
+Jack L:
 Acres: Float
 TotalLiving Area: int
 Bedrooms:int
@@ -97,7 +115,11 @@ Finished basement: int
 >>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
 =======
 
+<<<<<<< HEAD
+
+=======
 >>>>>>> bfc60b774e712483870564e052893bc667fc06d6
+>>>>>>> 8facf9835bb94f2cb701baa9854677dd4c136fe6
 Lot Area:
 AC:
 Fire Place:
