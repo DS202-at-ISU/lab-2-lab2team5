@@ -41,7 +41,10 @@ The variables for the Ames data are:
 
 Katie N:
 Parcel ID: ID of the character (Integer) 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 980c9ad48d69d36f33f5bcf4216352f1a01a5258
 ```{r setup, include=FALSE}
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
@@ -62,6 +65,7 @@ We cannot find a range for this variable
 
 Anna F:
 
+<<<<<<< HEAD
 Occupancy: Type of family ownership and owner details (String)
 
 We cannot find a range for this variable
@@ -83,6 +87,8 @@ Finished basement: Total area of the finshed basement in square feet (Integer)
 
 We cannot find a range for this variable
 
+=======
+>>>>>>> 980c9ad48d69d36f33f5bcf4216352f1a01a5258
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
@@ -102,10 +108,32 @@ range(ames$YearBuilt, na.rm = TRUE)
 ```
 
 Jack L:
+<<<<<<< HEAD
+Acres: Acres of the lot (Float)
+TotalLiving Area: Total living area in square feet (Integer)
+Bedrooms:Number of bedrooms (Integer)
+Finished basement:Total area of the finished basement in square feet (Integer)
+```{r setup, include=FALSE}
+range(ames$Acres, na.rm = TRUE)
+range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
+```
+
+
+<<<<<<< HEAD
+>>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
+=======
+=======
 Acres: Float
 TotalLiving Area: int
 Bedrooms:int
 Finished basement: int
+>>>>>>> 935d0e8b5897419b0bd833370460777773b18ade
+
+
+Lot Area:
+AC:
+Fire Place:
+Neightborhood:
 
 Grace Iversen (Last 4 variables)
 Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard.
