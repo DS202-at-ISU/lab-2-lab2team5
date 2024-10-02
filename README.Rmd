@@ -105,3 +105,26 @@ Neightborhood: This is a fctr object. It represents the neightborhood area in Am
 2. Our main variable is sale price
 
 
+
+
+
+
+
+
+Historgram 
+
+```{r}
+library(ggplot2)
+
+ggplot(ames, aes(x = `Sale Price`)) + 
+  geom_histogram() +
+  ggtitle("Sale Price Count")
+```
+
+
+
+
+
+
+
+
