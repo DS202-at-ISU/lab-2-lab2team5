@@ -59,6 +59,6 @@ Fire Place:
 Neightborhood:
 
 
-
+2. Our main variable is sale price
 
 
