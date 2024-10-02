@@ -41,10 +41,11 @@ head(ames)
 
 
 The variables for the Ames data are:
-Parcel ID: ID of the (Integer) 
+Parcel ID: ID of the character (Integer) 
 Address: Property address in Ames, IA (String)
 Style: Type and build of housing (String)
 Occupancy: Type of family ownership and owner details (String)
+<<<<<<< HEAD
 Sale Date: 
 Sale Price: 
 Multi Sale:
@@ -53,6 +54,16 @@ Acres: Acres of the lot. (Float)
 TotalLiving Area: Total living area in square feet (Integer)
 Bedrooms: Number of bedrooms (Integer)
 Finished basement: Total area of the finshed basement in square feet (Integer)
+=======
+Sale Date: Date of Sale written as Year_Month_Day
+Sale Price: Sale Price in US Dollars (Integers)
+Multi Sale: If the sale was part of a package (Logical Value)
+Year Built: Year that house was built (Integer Value)
+Acres: Float
+TotalLiving Area: int
+Bedrooms:int
+Finished basement: int
+>>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
 Lot Area:
 AC:
 Fire Place:
