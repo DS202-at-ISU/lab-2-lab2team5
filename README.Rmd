@@ -43,8 +43,11 @@ head(ames)
 The variables for the Ames data are:
 Parcel ID: ID of the character (Integer) 
 Address: Property address in Ames, IA (String)
+We cannot find a range of this variable
 Style: Type and build of housing (String)
+We cannot find a range of this variable
 Occupancy: Type of family ownership and owner details (String)
+We cannot find a range for this variable
 Sale Date: Date of Sale written as Year_Month_Day
 Sale Price: Sale Price in US Dollars (Integers)
 Multi Sale: If the sale was part of a package (Logical Value)
