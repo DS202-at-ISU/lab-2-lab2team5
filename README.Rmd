@@ -24,7 +24,7 @@ Test Anna
 Katie test
 
 
-```{r setup, include=FALSE}
+```{r}
 
 library(classdata)
 data(ames)
@@ -44,7 +44,7 @@ Parcel ID: ID of the character (Integer)
 
 
 
-```{r setup, include=FALSE}
+```{r}
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
 
@@ -64,7 +64,7 @@ Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
 Sale Price: Sale Price in US Dollars (Integers)
-```{r setup, include=FALSE}
+```{r}
 range(ames$'Sale Price', na.rm = TRUE)
 
 ```
@@ -73,7 +73,7 @@ Multi Sale: If the sale was part of a package (Logical Value)
 -The range is not very important for here becuase there is only two values (yes and no for part of a package)
 
 Year Built: Year that house was built (Integer Value)
-```{r setup, include=FALSE}
+```{r}
 range(ames$YearBuilt, na.rm = TRUE)
 
 ```
@@ -83,7 +83,7 @@ Acres: Acres of the lot (Float)
 TotalLiving Area: Total living area in square feet (Integer)
 Bedrooms:Number of bedrooms (Integer)
 Finished basement:Total area of the finished basement in square feet (Integer)
-```{r setup, include=FALSE}
+```{r}
 range(ames$Acres, na.rm = TRUE)
 range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
 range(ames$Bedrooms (sf), na.rm = TRUE)
