@@ -32,6 +32,33 @@ Katie test
 library(classdata)
 data(ames)
 head(ames)
+?ames
 
 ```
+
+
+
+
+
+The variables for the Ames data are:
+Parcel ID: 
+Address: 
+Style:
+Occupancy: 
+Sale Date: 
+Sale Price: 
+Multi Sale:
+Year Built:
+Acres:
+TotalLiving Area:
+Bedrooms:
+Finished basement:
+Lot Area:
+AC:
+Fire Place:
+Neightborhood:
+
+
+
+
 
