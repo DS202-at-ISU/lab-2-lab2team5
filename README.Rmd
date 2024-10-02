@@ -39,14 +39,22 @@ head(ames)
 
 The variables for the Ames data are:
 
+Katie N:
 Parcel ID: ID of the character (Integer) 
+
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
+
 Style: Type and build of housing (String)
 We cannot find a range of this variable
+
 Occupancy: Type of family ownership and owner details (String)
-<<<<<<< HEAD
-<<<<<<< HEAD
+We cannot find a range for this variable
+
+
+Anna F:
+
+Occupancy: Type of family ownership and owner details (String)
 Sale Date: 
 Sale Price: 
 Multi Sale:
@@ -55,33 +63,32 @@ Acres: Acres of the lot. (Float)
 TotalLiving Area: Total living area in square feet (Integer)
 Bedrooms: Number of bedrooms (Integer)
 Finished basement: Total area of the finshed basement in square feet (Integer)
-=======
-=======
-We cannot find a range for this variable
-=======
 
->>>>>>> a74f7a2396849c64cc709f977e018088e4bd7cb4
->>>>>>> bfc60b774e712483870564e052893bc667fc06d6
+We cannot find a range for this variable
+
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
+
 Sale Price: Sale Price in US Dollars (Integers)
 ```{r setup, include=FALSE}
 range(ames$'Sale Price', na.rm = TRUE)
 
 ```
+
 Multi Sale: If the sale was part of a package (Logical Value)
 -The range is not very important for here becuase there is only two values (yes and no for part of a package)
+
 Year Built: Year that house was built (Integer Value)
 ```{r setup, include=FALSE}
 range(ames$YearBuilt, na.rm = TRUE)
 
 ```
 
+Jack L:
 Acres: Float
 TotalLiving Area: int
 Bedrooms:int
 Finished basement: int
-<<<<<<< HEAD
 
 Grace Iversen (Last 4 variables)
 Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard.
@@ -95,19 +102,8 @@ Fire Place: This is a logical variable representing if a house has a fireplace o
 
 Neightborhood: This is a fctr object. It represents the neightborhood area in Ames. There will not be a range value.
 
-=======
-<<<<<<< HEAD
->>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
-=======
-
->>>>>>> bfc60b774e712483870564e052893bc667fc06d6
-Lot Area:
-AC:
-Fire Place:
-Neightborhood:
 
 
 2. Our main variable is sale price
->>>>>>> 8facf9835bb94f2cb701baa9854677dd4c136fe6
 
 
