@@ -131,7 +131,9 @@ ggplot(ames, aes(x = `Sale Price`)) +
 
 
 
-4. Anna: For my Variables I will be comparing year built to sale price. The range of the year built is 0 to 2022. The range of the sale price is 0 to 20500000 (US Dollars). I first just plotted the Year on the X axis and Sale Price on the Y axis from this graph we can see that there are a few major outliers, one that doesn't have a year and multiple that are above a sale price of 1500 Thousand US Dollars. The graph also removed 447 rows containing missing values or values outside the scale range for the geom_point().
+4. Anna:
+
+For my Variables I will be comparing year built to sale price. The range of the year built is 0 to 2022. The range of the sale price is 0 to 20500000 (US Dollars). I first just plotted the Year on the X axis and Sale Price on the Y axis from this graph we can see that there are a few major outliers, one that doesn't have a year and multiple that are above a sale price of 1500 Thousand US Dollars. The graph also removed 447 rows containing missing values or values outside the scale range for the geom_point().
 
 ```{r}
 ggplot(ames, aes(x = YearBuilt , y = `Sale Price`/1000)) +
