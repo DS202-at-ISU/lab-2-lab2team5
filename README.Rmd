@@ -18,10 +18,7 @@ Include your answers in this document (Rmd file). Make sure that it knits proper
 All submissions to the github repo will be automatically uploaded for grading once the due date is passed.
 Submit a link to your repository on Canvas (only one submission per team) to signal to the instructors that you are done with your submission.
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 1653ac9857c4f8c8784148645096f49a73517cf8
 This is a message from Grace
 Test Anna
 Katie test
@@ -43,8 +40,11 @@ head(ames)
 The variables for the Ames data are:
 Parcel ID: ID of the character (Integer) 
 Address: Property address in Ames, IA (String)
+We cannot find a range of this variable
 Style: Type and build of housing (String)
+We cannot find a range of this variable
 Occupancy: Type of family ownership and owner details (String)
+<<<<<<< HEAD
 <<<<<<< HEAD
 Sale Date: 
 Sale Price: 
@@ -55,15 +55,36 @@ TotalLiving Area: Total living area in square feet (Integer)
 Bedrooms: Number of bedrooms (Integer)
 Finished basement: Total area of the finshed basement in square feet (Integer)
 =======
+=======
+We cannot find a range for this variable
+=======
+
+>>>>>>> a74f7a2396849c64cc709f977e018088e4bd7cb4
+>>>>>>> bfc60b774e712483870564e052893bc667fc06d6
 Sale Date: Date of Sale written as Year_Month_Day
+-We expect the Range to be similar to the Year Built
 Sale Price: Sale Price in US Dollars (Integers)
+```{r setup, include=FALSE}
+range(ames$'Sale Price', na.rm = TRUE)
+
+```
 Multi Sale: If the sale was part of a package (Logical Value)
+-The range is not very important for here becuase there is only two values (yes and no for part of a package)
 Year Built: Year that house was built (Integer Value)
+```{r setup, include=FALSE}
+range(ames$YearBuilt, na.rm = TRUE)
+
+```
+
 Acres: Float
 TotalLiving Area: int
 Bedrooms:int
 Finished basement: int
+<<<<<<< HEAD
 >>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
+=======
+
+>>>>>>> bfc60b774e712483870564e052893bc667fc06d6
 Lot Area:
 AC:
 Fire Place:
