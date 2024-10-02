@@ -38,24 +38,31 @@ head(ames)
 
 
 The variables for the Ames data are:
-Parcel ID: 
-Address: 
-Style:
-Occupancy: 
-Sale Date: 
-Sale Price: 
-Multi Sale:
-Year Built:
-Acres:
-TotalLiving Area:
-Bedrooms:
-Finished basement:
-Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard. The range 
-AC: Is a logical variable representing if the house has AC or not. It is a char object, so it will intake Y or N and become True or False.
-Fire Place: This is a logical variable representing if a house has a fireplace or not. It is a char object, so it will intake Y or N and become True or False.
-Neightborhood: This is a fctr object. It represents the neightborhood area in Ames.
 
+Parcel ID: ID of the character (Integer) 
+Address: Property address in Ames, IA (String)
+Style: Type and build of housing (String)
+Occupancy: Type of family ownership and owner details (String)
+Sale Date: Date of Sale written as Year_Month_Day
+Sale Price: Sale Price in US Dollars (Integers)
+Multi Sale: If the sale was part of a package (Logical Value)
+Year Built: Year that house was built (Integer Value)
+Acres: Float
+TotalLiving Area: int
+Bedrooms:int
+Finished basement: int
 
+Grace Iversen (Last 4 variables)
+Lot Area: total area in square feet. It is a dbl object. This variable represents a number for the area of the house yard.
+```{r}
+range(ames$LotArea, na.rm=TRUE)
+```
+
+AC: Is a logical variable representing if the house has AC or not. It is a char object, so it will intake Y or N and become True or False. The expected outcomes will be Yes or No.
+
+Fire Place: This is a logical variable representing if a house has a fireplace or not. It is a char object, so it will intake Y or N and become True or False. The expected outcomes will be Yes or No.
+
+Neightborhood: This is a fctr object. It represents the neightborhood area in Ames. There will not be a range value.
 
 
 
