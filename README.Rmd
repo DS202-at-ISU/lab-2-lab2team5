@@ -162,9 +162,6 @@ ggplot(ames, aes(x = `Sale Price`)) +
 
 
 
-4. We will be comparing year build and sale price as our variables
-
-
 
 
 
