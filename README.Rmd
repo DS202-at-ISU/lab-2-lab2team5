@@ -33,7 +33,7 @@ library(classdata)
 ```{r setup, include=FALSE}
 
 head(classdata)
+data(ames)
 
 ```
-
 
