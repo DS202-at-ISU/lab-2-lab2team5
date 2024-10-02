@@ -41,7 +41,7 @@ head(ames)
 
 
 The variables for the Ames data are:
-Parcel ID: ID of the (Integer) 
+Parcel ID: ID of the character (Integer) 
 Address: Property address in Ames, IA (String)
 Style: Type and build of housing (String)
 Occupancy: Type of family ownership and owner details (String)
