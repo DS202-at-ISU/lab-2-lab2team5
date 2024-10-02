@@ -18,11 +18,20 @@ Include your answers in this document (Rmd file). Make sure that it knits proper
 All submissions to the github repo will be automatically uploaded for grading once the due date is passed.
 Submit a link to your repository on Canvas (only one submission per team) to signal to the instructors that you are done with your submission.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1653ac9857c4f8c8784148645096f49a73517cf8
 This is a message from Grace
->>>>>>> 0e5c10d51b40881c0c3c71bd9993f6e3846476a6
-
-
-
 Test Anna
 Katie test
+
+
+```{r setup, include=FALSE}
+
+library(classdata)
+data(ames)
+head(ames)
+
+```
+
