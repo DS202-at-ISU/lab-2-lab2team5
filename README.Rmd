@@ -41,10 +41,10 @@ Parcel ID:
 Address: 
 Style:
 Occupancy: 
-Sale Date: 
-Sale Price: 
-Multi Sale:
-Year Built:
+Sale Date: Date of Sale written as Year_Month_Day
+Sale Price: Sale Price in US Dollars (Integers)
+Multi Sale: If the sale was part of a package (Logical Value)
+Year Built: Year that house was built (Integer Value)
 Acres:
 TotalLiving Area:
 Bedrooms:
