@@ -28,7 +28,7 @@ Katie test
 
 library(classdata)
 data(ames)
-
+head(ames)
 
 ```
 
