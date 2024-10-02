@@ -18,6 +18,10 @@ Include your answers in this document (Rmd file). Make sure that it knits proper
 All submissions to the github repo will be automatically uploaded for grading once the due date is passed.
 Submit a link to your repository on Canvas (only one submission per team) to signal to the instructors that you are done with your submission.
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1653ac9857c4f8c8784148645096f49a73517cf8
 This is a message from Grace
 Test Anna
 Katie test
@@ -37,18 +41,18 @@ head(ames)
 
 
 The variables for the Ames data are:
-Parcel ID: 
-Address: 
-Style:
-Occupancy: 
+Parcel ID: ID of the (Integer) 
+Address: Property address in Ames, IA (String)
+Style: Type and build of housing (String)
+Occupancy: Type of family ownership and owner details (String)
 Sale Date: Date of Sale written as Year_Month_Day
 Sale Price: Sale Price in US Dollars (Integers)
 Multi Sale: If the sale was part of a package (Logical Value)
 Year Built: Year that house was built (Integer Value)
-Acres:
-TotalLiving Area:
-Bedrooms:
-Finished basement:
+Acres: Float
+TotalLiving Area: int
+Bedrooms:int
+Finished basement: int
 Lot Area:
 AC:
 Fire Place:
