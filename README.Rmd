@@ -93,10 +93,16 @@ range(ames$YearBuilt, na.rm = TRUE)
 ```
 
 Jack L:
-Acres: Float
-TotalLiving Area: int
-Bedrooms:int
-Finished basement: int
+Acres: Acres of the lot (Float)
+TotalLiving Area: Total living area in square feet (Integer)
+Bedrooms:Number of bedrooms (Integer)
+Finished basement:Total area of the finished basement in square feet (Integer)
+```{r setup, include=FALSE}
+range(ames$Acres, na.rm = TRUE)
+range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
+```
+
+
 <<<<<<< HEAD
 >>>>>>> 933549a44bec7215ce6bafe13eeb4a0c88c38a52
 =======
