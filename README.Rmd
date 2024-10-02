@@ -130,9 +130,30 @@ ggplot(ames, aes(x = `Sale Price`)) +
 
 
 
-4. Anna: I will be comparing year built to sale price
+4. Anna: For my Variables I will be comparing year built to sale price. The range of the year built is 0 to 2022. The range of the sale price is 0 to 20500000 (US Dollars). I first just plotted the Year on the X axis and Sale Price on the Y axis from this graph we can see that there are a few major outliers, one that doesn't have a year and multiple that are above a sale price of 1500 Thousand US Dollars. The graph also removed 447 rows containing missing values or values outside the scale range for the geom_point().
 
+```{r}
+ggplot(ames, aes(x = YearBuilt , y = `Sale Price`/1000)) +
+  geom_point() +
+  labs(x="Year Built", y="Sale Price in Thousand of Dollars") +
+  ggtitle("Year Built Vs. Sale Price of Ames Houses")
 
+```
+
+I then in order to possible see a pattern of the main portion of data that is clumped in the bottom right hand corner of our first graph I set that axis to display only a specific range using xlim() and ylim(). I set the X range to be between the years 1870 and 2024 which got rid of one data point that had the year as a value of 0. I then set the Y range to be between 1 and 1500 Thousand Dollars. This got rid of 2144 rows that had a sale price of 0 and 332 rows that had a sale price that was higher then 1500 Thousand Dollars. (Note that the points outside the specific range will then be dropped from the plot)
+
+```{r}
+ggplot(ames, aes(x = YearBuilt , y = `Sale Price`/1000)) +
+  geom_point() + 
+  xlim(1870, 2024) +
+  ylim(1, 1500) +
+  labs(x="Year Built between 1870 and 2024", y="Sale Price Between 1 and 1500 Thousand Dollars") +
+  ggtitle("Year Built Vs. Sale Price of Ames Houses with Specific Range")
+
+#This removes 2924 Rows in Total: 447 Rows that have a n/a value, 1 that had a year of 0, 2144 that had a sale price of 1, and 332 that had a sale price higher then 1500 Thousand Dollars.
+```
+
+The pattern of Year Built and Sale Price with a Specific Range shows a possible curved, increasing/positive, variation Scatter Plot. The relationship of Year Built to the main variable of Sale Price (with Specific Range) is a postive direction with a moderate strength. This means that without the oddities (major outliers) or values that don't have a realistic Sale Price and Year such as 0 the variable Sale Price and Year Built have a correlation with one another.
 
 
 
