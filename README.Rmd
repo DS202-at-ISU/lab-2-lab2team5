@@ -24,7 +24,7 @@ Test Anna
 Katie test
 
 
-```{r setup, include=FALSE}
+```{r}
 
 library(classdata)
 data(ames)
@@ -37,22 +37,19 @@ head(ames)
 
 
 
-The variables for the Ames data are:
+1. The variables for the Ames data are:
 
 Katie N:
 Parcel ID: ID of the character (Integer) 
-<<<<<<< HEAD
 
-=======
->>>>>>> 980c9ad48d69d36f33f5bcf4216352f1a01a5258
-```{r setup, include=FALSE}
+
+
+```{r}
 range(ames$'Parcel ID', na.rm = TRUE)
 ```
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 4a27d8671a33347f8cdade4f0759bdb0c8b16ec7
+
 Address: Property address in Ames, IA (String)
 We cannot find a range of this variable
 
@@ -62,38 +59,12 @@ We cannot find a range of this variable
 Occupancy: Type of family ownership and owner details (String)
 We cannot find a range for this variable
 
-
-Anna F:
-
-<<<<<<< HEAD
-Occupancy: Type of family ownership and owner details (String)
-
-We cannot find a range for this variable
-
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 4a27d8671a33347f8cdade4f0759bdb0c8b16ec7
-Sale Date: 
-Sale Price: 
-Multi Sale:
-Year Built:
-Acres: Acres of the lot. (Float)
-TotalLiving Area: Total living area in square feet (Integer)
-Bedrooms: Number of bedrooms (Integer)
-Finished basement: Total area of the finshed basement in square feet (Integer)
-
-We cannot find a range for this variable
-
-=======
->>>>>>> 980c9ad48d69d36f33f5bcf4216352f1a01a5258
+Anna Variables: 
 Sale Date: Date of Sale written as Year_Month_Day
 -We expect the Range to be similar to the Year Built
 
 Sale Price: Sale Price in US Dollars (Integers)
-```{r setup, include=FALSE}
+```{r}
 range(ames$'Sale Price', na.rm = TRUE)
 
 ```
@@ -102,21 +73,20 @@ Multi Sale: If the sale was part of a package (Logical Value)
 -The range is not very important for here becuase there is only two values (yes and no for part of a package)
 
 Year Built: Year that house was built (Integer Value)
-```{r setup, include=FALSE}
+```{r}
 range(ames$YearBuilt, na.rm = TRUE)
 
 ```
 
 Jack L:
-<<<<<<< HEAD
 Acres: Acres of the lot (Float)
 TotalLiving Area: Total living area in square feet (Integer)
 Bedrooms:Number of bedrooms (Integer)
 Finished basement:Total area of the finished basement in square feet (Integer)
-```{r setup, include=FALSE}
+```{r}
 range(ames$Acres, na.rm = TRUE)
 range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
-range(ames$Bedrooms (sf), na.rm = TRUE)
+range(ames$Bedrooms, na.rm = TRUE)
 range(ames$`FinishedBsmtArea (sf)`, na.rm = TRUE)
 
 ```
@@ -159,9 +129,38 @@ ggplot(ames, aes(x = `Sale Price`)) +
   ggtitle("Sale Price Count")
 ```
 
+Anna: The Variable we choose was numerical, the general pattern of our histogram is that most of the data falls in between a House Sale Price of 0 and 1500 Thousand US Dollars. This makes our histogram look odd because there are around 780 rows that include houses over 1500 Thousand US Dollars, making the histogram very skewed and have large gaps. 
 
 
-4. Anna: I will be comparing year built to sale price
+4. Anna:
+
+For my Variables I will be comparing year built to sale price. The range of the year built is 0 to 2022. The range of the sale price is 0 to 20500000 (US Dollars). I first just plotted the Year on the X axis and Sale Price on the Y axis from this graph we can see that there are a few major outliers, one that doesn't have a year and multiple that are above a sale price of 1500 Thousand US Dollars. The graph also removed 447 rows containing missing values or values outside the scale range for the geom_point().
+
+```{r}
+ggplot(ames, aes(x = YearBuilt , y = `Sale Price`/1000)) +
+  geom_point() +
+  labs(x="Year Built", y="Sale Price in Thousand of Dollars") +
+  ggtitle("Year Built Vs. Sale Price of Ames Houses")
+
+```
+
+I then in order to possible see a pattern of the main portion of data that is clumped in the bottom right hand corner of our first graph I set that axis to display only a specific range using xlim() and ylim(). I set the X range to be between the years 1870 and 2024 which got rid of one data point that had the year as a value of 0. I then set the Y range to be between 1 and 1500 Thousand Dollars. This got rid of 2144 rows that had a sale price of 0 and 332 rows that had a sale price that was higher then 1500 Thousand Dollars. (Note that the points outside the specific range will then be dropped from the plot)
+
+```{r}
+ggplot(ames, aes(x = YearBuilt , y = `Sale Price`/1000)) +
+  geom_point() + 
+  xlim(1870, 2024) +
+  ylim(1, 1500) +
+  labs(x="Year Built between 1870 and 2024", y="Sale Price Between 1 and 1500 Thousand Dollars") +
+  ggtitle("Year Built Vs. Sale Price of Ames Houses with Specific Range")
+
+#This removes 2924 Rows in Total: 447 Rows that have a n/a value, 1 that had a year of 0, 2144 that had a sale price of 1, and 332 that had a sale price higher then 1500 Thousand Dollars.
+```
+
+The pattern of Year Built and Sale Price with a Specific Range shows a possible curved, increasing/positive, variation Scatter Plot. The relationship of Year Built to the main variable of Sale Price (with Specific Range) is a postive direction with a moderate strength. This means that without the oddities (major outliers) or values that don't have a realistic Sale Price and Year such as 0 the variable Sale Price and Year Built have a correlation with one another.
+
+
+
 
 Jack: I will be comparing the number of Bedrooms
 
