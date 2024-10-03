@@ -173,6 +173,13 @@ ggplot(ames, aes(y= `Sale Price` / 10000, x = `Bedrooms`)) +
   ggtitle("Sale Price based on number of Bedrooms") +
   labs(x = "Number of Bedrooms",
        y = "Sale Price / 10,000 ")
+
+ggplot(ames, aes(y= `Sale Price` / 10000, x = `Bedrooms`)) +
+geom_point() +
+  ggtitle("Sale Price based on number of Bedrooms") +
+  labs(x = "Number of Bedrooms",
+       y = "Sale Price / 10,000 ") + 
+  ylim(0, 150)
 ```
 
 
