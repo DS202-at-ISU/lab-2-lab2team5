@@ -198,5 +198,5 @@ geom_point() +
 The scatter plot shows that there is overall a positive, linear and a moderately strong correlation between the number of bedrooms and the sale price of a home. There were a few outliers around the 15,000,000 sale price mark and above and one house with 10 bedrooms, so I cut them out in a slightly smaller scatter plot. Making the scatter plot go from 0-8 bedrooms and 0-1,500,000. However, the amount of bedrooms has correlation with the sale price of homes in Ames, as the bedrooms increase, so does the sale price.
 
 
-
+Katie N: I will be comparing sale price and acres of land the house is on. 
 
